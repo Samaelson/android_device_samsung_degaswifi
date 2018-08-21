@@ -1,4 +1,3 @@
-# device_samsung_degaswifi
 # Device configuration for Samsung Galaxy Tab 4 7"
 
 ## Spec Sheet
@@ -19,64 +18,6 @@
 
 ## Device Picture
 ![Galaxy Tab 4 7"](http://cdn2.gsmarena.com/vv/bigpic/samsung-galaxy-tab-4-70.jpg "Galaxy Tab 4 7")
-
-
-
-LineageOS 15.1
-==============
-
-Getting Started
----------------
-
-To get started with Android for degaswifi, you'll need to get
-familiar with [Git and Repo](http://source.android.com/source/using-repo.html).
-
-
-You need to download JAVA to compile:
-
-LineageOS 14.1: OpenJDK 1.8 (install openjdk-8-jdk)
-
-LineageOS 11.0-13.0: OpenJDK 1.7 (install openjdk-7-jdk)*
-
-
-Make your directories where the source code is kept:
-
-mkdir -p ~/bin
-
-mkdir -p ~/android/lineage
-
-
-Make sure to repo the Google source code:
-
-curl https://storage.googleapis.com/git-repo-downloads/repo > ~/bin/repo
-
-chmod a+x ~/bin/repo
-
-
-
-To initialize your local repository, use a command like this:
-
-    repo init -u git://github.com/secretwolf98/device_samsung_degaswifi -b lineage-15.1
-
-Then to sync up:
-
-    repo sync
-
-Choose target:
-
-    source build/envsetup.sh
-    
-    lunch degaswifi
-
-
-To install the build:
-
-    cd $OUT
-
-
-
-Please see the LineageOS Wiki for building instructions.
-
 
 
 ## Copyright
