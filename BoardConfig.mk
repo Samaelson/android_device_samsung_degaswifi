@@ -36,11 +36,11 @@ TARGET_CPU_SMP := true
 TARGET_KERNEL_SOURCE := kernel/samsung/degaswifi
 # TARGET_KERNEL_CONFIG := lineage_degaswifi_defconfig
 TARGET_KERNEL_CONFIG := pxa1088_degaswifi_eur_defconfig
-TARGET_KERNEL_VARIANT_CONFIG := pxa1088_degaswifi_eur_tgalal
+# TARGET_KERNEL_VARIANT_CONFIG := pxa1088_degaswifi_eur_tgalal
 
 BOARD_KERNEL_BASE := 0x10000000
 BOARD_CUSTOM_MKBOOTIMG := device/samsung/degaswifi/degas-mkbootimg
-BOARD_CUSTOM_BOOTIMG_MK := device/samsung/degaswifi/degaswifi_mkbootimg.mk
+BOARD_CUSTOM_BOOTIMG_MK := device/samsung/degaswifi/degas-mkbootimg.mk
 BOARD_MKBOOTIMG_ARGS := --dt device/samsung/degaswifi/boot.img-dt --ramdisk_offset 0x01000000
 BOARD_KERNEL_PAGESIZE := 2048
 BOARD_KERNEL_CMDLINE := androidboot.selinux=disabled
@@ -77,6 +77,9 @@ BOARD_HARDWARE_CLASS := device/samsung/degaswifi/cmhw
 COMMON_GLOBAL_CFLAGS += -DMRVL_HARDWARE
 COMMON_GLOBAL_CFLAGS += -DNEEDS_VECTORIMPL_SYMBOLS
 COMMON_GLOBAL_CFLAGS += -DNO_SECURE_DISCARD
+
+# Marvell ION (Generic config)
+MRVL_ION := true
 
 # Graphics
 BOARD_USES_MRVL_HARDWARE := true
