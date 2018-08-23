@@ -15,22 +15,22 @@
 # limitations under the License.
 #
 
-# Boot animation
-TARGET_SCREEN_HEIGHT := 1280
-TARGET_SCREEN_WIDTH := 800
-
-# Inherit device configuration
-$(call inherit-product, device/samsung/degaswifi/device.mk)
-
-# LineageOS specific overlay
-# DEVICE_PACKAGE_OVERLAYS += device/samsung/degaswifi/overlay/lineage-common
+# Inherit common LineageOS configuration
+$(call inherit-product, vendor/lineage/config/common_full_tablet_wifionly.mk)
 
 # Inherit from the common Open Source product configuration
 #$(call inherit-product, $(SRC_TARGET_DIR)/product/aosp_degaswifi.mk)
 $(call inherit-product, device/samsung/degaswifi/aosp_degaswifi.mk)
 
-# Inherit common LineageOS configuration
-$(call inherit-product, vendor/lineage/config/common_full_tablet_wifionly.mk)
+# Boot animation
+#TARGET_SCREEN_HEIGHT := 1280
+#TARGET_SCREEN_WIDTH := 800
+
+# Inherit device configuration
+#$(call inherit-product, device/samsung/degaswifi/device.mk)
+
+# LineageOS specific overlay
+# DEVICE_PACKAGE_OVERLAYS += device/samsung/degaswifi/overlay/lineage-common
 
 
 # Set those variables here to overwrite the inherited values.
