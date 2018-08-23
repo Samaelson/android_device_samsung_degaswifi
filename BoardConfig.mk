@@ -37,6 +37,7 @@ TARGET_KERNEL_SOURCE := kernel/samsung/degaswifi
 # TARGET_KERNEL_CONFIG := lineage_degaswifi_defconfig
 TARGET_KERNEL_CONFIG := pxa1088_degaswifi_eur_defconfig
 # TARGET_KERNEL_VARIANT_CONFIG := pxa1088_degaswifi_eur_tgalal
+BOARD_KERNEL_IMAGE_NAME := zImage
 
 BOARD_KERNEL_BASE := 0x10000000
 BOARD_CUSTOM_MKBOOTIMG := device/samsung/degaswifi/degas-mkbootimg
