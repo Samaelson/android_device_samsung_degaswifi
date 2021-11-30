@@ -28,7 +28,7 @@ TARGET_NO_BOOTLOADER := true
 TARGET_BOOTLOADER_BOARD_NAME := PXA1088
 
 # Inline kernel building
-TARGET_KERNEL_SOURCE := kernel/samsung/degaswifi
+TARGET_KERNEL_SOURCE := kernel/marvell/pxa1088
 TARGET_KERNEL_CONFIG := degaswifi_defconfig
 BOARD_NAND_PAGE_SIZE := 4096
 BOARD_NAND_SPARE_SIZE := 128

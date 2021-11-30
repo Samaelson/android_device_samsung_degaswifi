@@ -33,7 +33,7 @@ TARGET_CPU_SMP := true
 
 
 # Kernel, bootloader, etc.
-TARGET_KERNEL_SOURCE := kernel/samsung/degaswifi
+TARGET_KERNEL_SOURCE := kernel/marvell/pxa1088
 # TARGET_KERNEL_CONFIG := lineage_degaswifi_defconfig
 TARGET_KERNEL_CONFIG := pxa1088_degaswifi_eur_defconfig
 # TARGET_KERNEL_VARIANT_CONFIG := pxa1088_degaswifi_eur_tgalal
@@ -51,7 +51,7 @@ TARGET_NO_BOOTLOADER := true
 TARGET_NO_RADIOIMAGE := true
 
 # Assert
-TARGET_OTA_ASSERT_DEVICE := degaswifi,degas,SM-T230,SM-T230NU
+TARGET_OTA_ASSERT_DEVICE := degaswifi,degas,SM-T230,SM-T230NU,SM-T231
 
 # Use file-based OTA zips
 BLOCK_BASED_OTA := false

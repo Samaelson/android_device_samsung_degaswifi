@@ -21,9 +21,9 @@ $(call inherit-product-if-exists, frameworks/base/data/sounds/AudioPackage13.mk)
 $(call inherit-product, device/samsung/degaswifi/device.mk)
 
 # Inherit from those products. Most specific first.
-$(call inherit-product, $(SRC_TARGET_DIR)/product/aosp_base.mk)
+$(call inherit-product, $(SRC_TARGET_DIR)/product/lineage_base.mk)
 
-PRODUCT_NAME := aosp_degaswifi
+PRODUCT_NAME := lineage_degaswifi
 PRODUCT_DEVICE := degaswifi
 PRODUCT_BRAND := Android
 PRODUCT_MODEL := Galaxy Tab 4
